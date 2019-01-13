@@ -1,0 +1,31 @@
+.storeContainer {
+    height: 100%;
+    width: 100%;
+    padding: 32px 20px;
+    background-color: #85dcb8;
+    .cardOuterContainer {
+        display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: space-around;
+        .card-Container {
+            width: 20%;
+            margin: 0 40px;
+            .example-card {
+                // height: 20vh;
+                width: 100%;
+                height: auto;
+                background-color: #E8A87C;
+                .header {
+                    height: 10vh;
+                }
+                img {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+   
+    
+}

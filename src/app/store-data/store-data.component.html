@@ -1,0 +1,31 @@
+<div class="formContainer">
+  <form #f="ngForm" (ngSubmit)="submitForm(f.value)">
+    <div >
+        <mat-form-field class="form-group">
+            <input [ngModel] name="storeName" class="form-control" matInput placeholder="Store Name">
+          </mat-form-field>
+    </div>
+    <div>
+        <mat-form-field class="form-group">
+            <input [ngModel] name="storeDesc" class="form-control" matInput placeholder="Store Description">
+          </mat-form-field>
+    </div>
+    <div>
+        <mat-form-field class="form-group">
+            <input [ngModel] name="storeImage" class="form-control" matInput placeholder="Image Path">
+          </mat-form-field>
+    </div>
+    <button mat-raised-button color="primary" type="submit">Submit</button>
+  </form>
+  <div>
+    
+  </div>
+</div>
+
+<div>
+  <div *ngFor="let obj of data">
+    {{obj}}
+  </div>
+</div>
+
+
